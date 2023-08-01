@@ -5,7 +5,15 @@ const router = express.Router()
 
 // ================================================================
 
-// router.get Створює нам один ентпоїнт
+router.get('/selector', function (req, res) {
+  // res.render генерує нам HTML сторінку
+
+  //            ↙ cюди вводимо назву файлу з сontainer
+  res.render('selector', {
+    layout: "selector"
+  })
+  //                  ↑↑ сюди вводимо JSON дані
+})// router.get Створює нам один ентпоїнт
 
 //           ↙ тут вводимо шлях (PATH) до сторінки
 router.get('/', function (req, res) {

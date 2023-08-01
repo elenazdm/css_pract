@@ -1,7 +1,40 @@
-html {
-  max-width: 720px;
+.card > p {
+  color: rgba(255,100,200,0.50);
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 2px blue;
 }
-
-body {
-  background: #fff;
+p {
+  background: hsla(183, 100%, 65%, 0.51);
+}
+p:focus, p:hover {
+  -webkit-text-fill-color: rgb(171, 221, 101);
+  -webkit-text-stroke: 2px rgb(255, 128, 0);
+  direction: rtl;
+}
+#test {
+  -webkit-text-fill-color: none;
+  -webkit-text-stroke: none;
+  direction: none;
+  letter-spacing: 1px;
+} 
+.card {
+  color:red;
+  border-color: aqua ;
+  border-radius: 100%;
+  
+  text-align: justify;
+}
+span {
+  text-align: justify;
+  text-transform: uppercase;
+  tab-size: 10px;
+  text-decoration: underline dotted red;
+  text-decoration-line: overline;
+}
+span:hover {
+  text-decoration-style: wavy;
+}
+pre {
+  tab-size: 20;
+  
 }
