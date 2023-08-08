@@ -590,16 +590,15 @@ tt,
 u,
 ul,
 var,
-video {
-  margin: 0;
+/* video {
+  /* margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+  border: 0; */
+  /* font-size: 100%; */
+  /* vertical-align: baseline;} */
 
-:focus {
+
+/* :focus {
   outline: 0;
 }
 
@@ -615,16 +614,13 @@ menu,
 nav,
 section {
   display: block;
-}
+} */
 
-body {
+/* body {
   line-height: 1;
-}
+} */
 
-ol,
-ul {
-  list-style: none;
-}
+
 
 blockquote,
 q {
