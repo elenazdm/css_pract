@@ -1,5 +1,6 @@
 .page {
   background: #ffffff;
+  padding: 0 15px;
 }
 .page_content {
   max-width: 960px;
@@ -9,7 +10,7 @@
   padding: 24px;
 
 }
-.header_logo {
+.logo {
   font-size: 17px;
 }
 .divider {
@@ -48,3 +49,91 @@
   margin-left: auto;
   width: fit-content;
  }
+ .page_block:not(:last-of-type) {
+  margin-bottom: 80px;
+ }
+ .footer {
+  padding: 24px 0;
+ }
+ .footer_copyright {
+  font-size: 14px;
+  color: #6c757d;
+  display: block;
+  margin-top: 12px;
+ }
+ .footer_title{
+  font-size: 54px;
+  color: #212529;
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 500;
+ }
+ .hero_title {
+  font-size: 56 px;
+  color: #212529;
+  font-weight: 550;
+  margin: 12px;
+  text-align: center;
+ }
+ .hero_text {
+  font-size: 20 px;
+  color: #212529;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 585px;
+ }
+ .plans_card:not(:last-of-type) {
+  margin-right: 24px;
+ }
+ .card-header {
+  padding: 12px;
+  text-align: center;
+  font-size: 24px;
+  color:#212529;
+ }
+ .card-header {
+  padding: 24px;
+ }
+ .card_block {
+  text-align: center;
+  margin-bottom: 24px;
+ }
+ .card_price_amount {
+  front-size: 40px;
+  color: #212529
+
+ }
+ .card_price_duration {
+  front-size: 29px;
+  color: #6c757d
+
+ }
+ .card_price_duration {
+  front-size: 29px;
+  color: #6c757d
+
+ }
+ .card_description {
+  margin-bottom: 24px;
+ }
+ .card_description_item {
+  font-size: 16px;
+  color: #212529;
+  display:block;
+  text-align: center;
+
+ }
+ .card_description_item:not(:last-of-type) {
+  margin-bottom: 12px;
+ 
+ }
+ .card_block:not(:last-of-type) {
+  margin-bottom: 24px;
+ }
+ .card_button {
+  display: block;
+  width:100%;
+  font-size: 19px;
+  padding: 9px;
+
+}

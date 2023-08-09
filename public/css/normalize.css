@@ -899,9 +899,9 @@ input {
   color: inherit;
 }
 
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
