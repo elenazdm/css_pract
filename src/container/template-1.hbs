@@ -1,10 +1,11 @@
 <div class='page'>
   <div class='page_content'>
     <div class="page_block">
-      <div class="col-3">
+      
            <header class='header row g-0'>
+            <div class="col-3">
               {{>logo}}
-      </div>
+            </div>
             
             <nav class='header_nav col-9 '>
               <div class="header_nav_right">
@@ -14,7 +15,7 @@
             </nav>
 
           </header>
-          {{>divider}}
+          
     </div>
     <div class="page_block">
      {{>hero title=hero.title text=hero.text}}
@@ -34,15 +35,15 @@
    
     
     <div class="page_block">
-      {{>divider}}
-      <footer class="row footer">
+      
+      <footer class="row g-0 footer">
         <div class="col-3">
            {{>logo}}
            <span class="footer_copyright" >Copyright 2023-2024</span>
         </div>
         {{#each footer}}
          <div class="col-3">
-           <span class=".footer_title">{{title}}</span>
+           <span class="footer_title">{{title}}</span>
            {{>nav list=links isVertical=true}}
          </div>
         {{/each}}
