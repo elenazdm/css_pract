@@ -81,7 +81,7 @@
 
 }
 .nav_inline > .nav_link:not(:last-child) {
- margin-right: 24px;
+ margin-right: var(--space-l);
 }
 .nav_vertical> .nav_link:not(:last-child) {
   margin-bottom: 12px;
@@ -170,11 +170,11 @@
  .heading_featured{
   color: #212529;
   font-size: 31px;
-  padding-top: 24px;
+  padding-top: var(--space-l);
 
  }
  .info{
-  padding-top: 24px;
+  padding-top: var(--space-l);
   color:#212529;
   size: 16px;
 
