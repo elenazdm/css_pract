@@ -4,7 +4,7 @@
       
   <header class='header row g-0'>
             <div class="col-3">
-              {{>logo}}
+              {{>logo}} 
             </div>
             
             <nav class='header_nav col-9 '>
@@ -15,6 +15,7 @@
             </nav>
 
   </header>
+  
       <div class="hero">
         {{#with hero}}
           <div class="hero_content">
@@ -28,7 +29,19 @@
         {{/with}}
          
       </div>
+       
+    
+      <div class="modal">
+    <div class="modal_text">
+      
+      <img src="{{hero.photo}}" alt="Hero image" class="modal_photo">
+      <div class="modal_text">{{hero.text}} {{hero.text}}{{hero.text}}</div>
+     </div>
+  </div>
       <main class="blog">
+        <div>Opinion<input type="text" class="inpit" placeholder="Opinion">
+          
+        </div>
         {{#each blog}}
         {{>cardBlog data=this}}
         {{/each}}

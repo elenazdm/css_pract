@@ -40,6 +40,13 @@
   border-bottom: 1px solid var(--color-border);
   display: flex;
   justify-content: space-between;
+  position: sticky;
+
+  max-width: 960px;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  background: #fff;
 
 }
 .logo {
@@ -53,6 +60,40 @@
   justify-content: center;
   align-items: center;
 
+}
+.modal {
+  position: sticky;
+  top:  24px;
+  left: 200px;
+  background: rgba(7, 0, 0, 0.879);
+  padding: 24px;
+  line-height: 150%;
+  
+  width: 600px;
+   border-radius: 24px;
+  z-index: 1;
+  color: #fff;
+  
+}
+.modal_photo {
+  height: 400px;
+  width: 400px;
+  
+  margin-top: 5px;
+  margin-right: 5px;
+ 
+  background-color: #0804f3;
+  object-position:  top;
+ 
+}
+.modal_text {
+  caret-color: #0804f3;
+
+} 
+.input {
+  caret-color: #0804f3;
+  border: 1px solid var(--color-text);
+  
 }
 .divider {
   
@@ -115,6 +156,11 @@
   border-top: 1px solid var(--color-border);
   display: flex;
   justify-content: space-between;
+  position:fixed;
+  width: 960px;
+  bottom: 0;
+  z-index: 1;
+  background: #fff;
  }
  .footer_copyright {
   font-size: var(--size-s);

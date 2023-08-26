@@ -623,9 +623,9 @@ section {
 
 
 blockquote,
-q {
+/* q {
   quotes: none;
-}
+} */
 
 blockquote:after,
 blockquote:before,
@@ -690,11 +690,11 @@ a:active,
 a:hover {
   outline: 0;
 }
-
+/* 
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
-}
+} */
 
 figure {
   margin: 0;
@@ -786,10 +786,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+/* 
 img {
   vertical-align: middle;
-}
+} */
 
 fieldset {
   border: 0;
