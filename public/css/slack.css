@@ -1,3 +1,4 @@
+@layer component, variant;
 @font-face {
     font-family: "HelveticaNeueBold.ttf" ;
     src: url("../font/HelveticaNeueBold.ttf");
@@ -8,6 +9,9 @@ body {
 }
 :root {
    --color-white: #fff; 
+   --color-black: black;
+   --color-primary:  #611F69;
+   --color-loght:  #F4EDE4;
    --page-width-big: 1260px;
    --page-width-medium: 1000px;
    --page--width-small: 700px;
@@ -19,6 +23,13 @@ body {
    --spacing-6: 28px;
    --spacing-7: 32px;
    --spacing-7: 36px;
+   --size-1: 14px;
+   --size-2: 18px;
+   --size-3: 22px;
+   --radius-1: 4px;
+   --opacity-1: 0.7;
+   --opacity-2: 0.5;
+   --transition-1: 0.6 ;
 
 }
 .page{
@@ -52,12 +63,25 @@ body {
     }  
 }
 .hero_section {
-    display: grid;
-    gap: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 200px;
+    
+    height: 60vh;
+     min-height: 680px;
 }
 .hero{
- display: grid;
- gap: var(--spacing-4);
+ display: flex;
+ height: 100%;
+ align-items: center; 
+ }
+.hero_content{
+    display: grid;
+    gap: var(--spacing-4);
+    max-width: 425px;
+    color: var(--color-black);
+    position: relative;
 }
 .brands{
   display: flex;
@@ -67,4 +91,64 @@ body {
   row-gap: var(--spacing-4);
   flex-wrap: wrap;
 }
-      
+.hero_image{
+   
+   position: absolute;
+   left: 580px;
+   top: 0;
+}
+.hero_label {
+font-size: var(--size-1);
+}  
+.hero_title {
+font-size: 50px;
+
+}
+.hero_info {
+    font-size: var(--size-2)
+}
+.hero_buttons {
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+   gap: var(--spacing-5);
+}
+@layer component{
+ .button {
+ text-decoration: none;
+
+ padding: var(--spacing-3);
+ border-radius: var(--radius-1);
+ text-align: center;
+ border: 1px solid transparent;
+ transition: opacity var(--transition-1);
+}
+.button:hover{
+    opacity: var(--opacity-1);
+    cursor: pointer;
+}
+.button:active {
+    opacity: var(--opacity-2);
+}
+   
+}
+@layer variant {
+    
+    .button_secondary{
+        border-color: var(--color-primary);
+        color: var(--color-primary) ;
+        border-width: 2px;
+    }
+    .button_primary {
+        color: var(--color-white);
+        background-color: var(--color-primary);
+    }
+    
+}
+.page_section_light {
+    background-color: var(--color-loght)
+}
+.features_section {
+    padding-top:;
+    padding-bottom: ;
+    background-color: ;
+}
