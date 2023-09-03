@@ -26,20 +26,25 @@ body {
    --size-1: 14px;
    --size-2: 18px;
    --size-3: 22px;
+   --size-4: 26px;
+   --size-5: 30px;
+   --size-6: 34px;
    --radius-1: 4px;
    --opacity-1: 0.7;
    --opacity-2: 0.5;
    --transition-1: 0.6 ;
-
+   --line-height: 1.5em;
 }
 .page{
  display: grid;  
 }
-
-.page_section {
+@layer component{
+ .page_section {
     display: flex;
     justify-content: center;
+}   
 }
+
 .page_content {
     width: 100%;
     padding: var(--spacing-3);
@@ -122,11 +127,14 @@ font-size: 50px;
  border: 1px solid transparent;
  transition: opacity var(--transition-1);
 }
-.button:hover{
+.click {
+    transition: opacity var(--transition-1);
+}
+.click:hover{
     opacity: var(--opacity-1);
     cursor: pointer;
 }
-.button:active {
+.click:active {
     opacity: var(--opacity-2);
 }
    
@@ -144,11 +152,72 @@ font-size: 50px;
     }
     
 }
-.page_section_light {
-    background-color: var(--color-loght)
-}
 .features_section {
-    padding-top:;
-    padding-bottom: ;
-    background-color: ;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: grid;
+    gap: var(--spacing-5);
+    
+}
+
+@layer variant {
+  .page_section_light {
+    background-color: var(--color-loght)
+}  
+}
+.features_title {
+font-size: var(--size-6);
+}
+.features_description{
+    font-size: var(--size-2);
+    max-width: 520px;
+   
+}
+.feat_card{
+padding: var(--spacing-3);
+background-color: var(--color-white);
+display:grid ;
+gap: var(--spacing-3);
+grid-template-rows: min-content min-content 1fr min-content;
+font-size: var(--size-2);
+
+}
+@layer component {
+    .icon{
+        display: block;
+        height: 48px;
+        width: 48px;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+}
+@layer variant {
+    .feat_icon {
+        height: 48px;
+        width: 48px;
+    }
+    .icon_arrow {
+        height: 14px;
+        width: 24px;  
+        background-image: url('/img/arrow-right.svg');
+    }
+}
+.feat_link {
+ justify-self: flex-end;
+}
+.features_grid_4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--spacing-3);
+    
+}
+.features_grid_4 > .feat_card:first-of-type {
+grid-row: 1 / 3;
+}
+@layer component {
+    .double_line {
+        height: var(--line-height);
+    }
 }
